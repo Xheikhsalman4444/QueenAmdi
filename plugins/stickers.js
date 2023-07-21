@@ -23,8 +23,8 @@ const Lang = Language.getString('stickers');
 AMDI({ cmd: ["sticker", "s", "stic"], desc: Lang.stickerDesc, example: Lang.stickEx, type: "primary", react: "🖼️" }, (async (amdiWA) => {
     const { clearMedia, react, reply, downloadMedia, reply_message, isMedia, isTaggedDocument, isTaggedImage, isTaggedOneTimeImage, isTaggedOneTimeVideo, isTaggedVideo, isTaggedSticker } = amdiWA.msgLayout;
 
-    const customName = await getMiscData('SNAME')
-    const customAuth = await getMiscData('SAUTHOR')
+    const customName = await getMiscData('𝙎𝙐𝙆𝙐𝙉𝘼')
+    const customAuth = await getMiscData('𝙎𝘼𝙇𝙈𝘼𝙉 𝘼𝙃𝙈𝘼𝘿')
     var packName = await sticker.packNAME(amdiWA, customName.data);
     var authorName = await sticker.authorNAME(amdiWA, customAuth.data);
 
